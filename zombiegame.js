@@ -5,9 +5,12 @@ var zombie = {
     hp:10,
     attack:2
 }
+var player = {
+    hp:10
+}
 
-while(zombie.hp>0) {
-    var hitZombie = Math.floor(Math.random() * 2)
+while(zombie.hp>0 && player.hp>0) {
+    var hitZombie = Math.floor(Math.random() * 1.5)
     var hitsThisRound = Math.floor(Math.random()*5 + 1)
     if (hitZombie) { 
         console.log("You hit the undead fucker!");
@@ -18,14 +21,19 @@ while(zombie.hp>0) {
         }
         else {
             zombie.hp=zombie.hp-hitsThisRound
-            console.log(hitZombie);
         }
     }
     else {
         console.log("You missed!");
         var zombieHitYou = Math.floor(Math.random() * 5)
-        if (zombieHitYou>=4) {
-            console.log("Ew, it ate you!")
+        if (zombieHitYou>=3) {
+            player.hp = player.hp-zombie.attack
+            if (player.hp>0) {
+                console.log("zombie dick to mouth");
+            }
+            else {
+                console.log("Ew, it ate you!")
+            }
         }
     }
     console.log("zombie hp:" + zombie.hp)
