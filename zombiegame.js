@@ -15,7 +15,7 @@ while(zombie.hp>0 && player.hp>0) {
     if (hitZombie) { 
         console.log("You hit the undead fucker!");
         totalDamage += hitsThisRound;
-        if (totalDamage >= 2){
+        if (totalDamage >= 4){
             console.log("You put a bullet in it's head!");
             zombie.hp=0
         }
