@@ -22,7 +22,11 @@ while(zombie.hp>0) {
         }
     }
     else {
-        console.log("Ew, it ate you!");
+        console.log("You missed!");
+        var zombieHitYou = Math.floor(Math.random() * 5)
+        if (zombieHitYou>=4) {
+            console.log("Ew, it ate you!")
+        }
     }
     console.log("zombie hp:" + zombie.hp)
 }
