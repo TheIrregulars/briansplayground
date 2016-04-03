@@ -1,5 +1,8 @@
 var headShot = true;
+var totalDamage = 0;
 while(headShot) {
+    var hitZombie = Math.floor(Math.random() * 2)
+    var hitsThisRound = Math.floor(Math.random()*5 + 1)
     if (hitZombie) {
         console.log("Ew, it ate you!");
     }
@@ -15,6 +18,3 @@ while(headShot) {
     }
     headShot = false;
 }
-var hitZombie = Math.floor(Math.random() * 2)
-var hitsThisRound = Math.floor(Math.random()*5 + 1)
-var totalDamage = 0
