@@ -12,5 +12,7 @@ function Penguin(name) {
 	this.name = name;
 	this.numLegs = 2;
 };
-Penguin.prototype = new Animal() 
+Penguin.prototype = new Animal()
+var penguin = new Penguin("Pete") 
 // set its prototype to be a new instance of Animal
+penguin.sayName()
