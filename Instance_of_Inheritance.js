@@ -4,7 +4,7 @@ function Animal(name, numLegs) {
     this.numLegs = numLegs;
 }
 Animal.prototype.sayName = function() {
-    console.log("Hi my name is " + this.name);
+    console.log("Hi, my name is " + this.name);
 };
 
 // define a Penguin class
@@ -15,4 +15,4 @@ function Penguin(name) {
 Penguin.prototype = new Animal()
 var penguin = new Penguin("Pete") 
 // set its prototype to be a new instance of Animal
-penguin.sayName()
+penguin.sayName() 
