@@ -13,3 +13,5 @@ function Person(first,last,age) {
 var john = new Person('John','Smith',30);
 /* the variable myBalance should access askTeller()
    with a password as an argument  */
+var myBalance = john.askTeller(1234);
+console.log(myBalance);
