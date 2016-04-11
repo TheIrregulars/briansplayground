@@ -10,4 +10,4 @@ var lucky_sevens = function (x) {
 		}
 	}
 };
-lucky_sevens([2,1,5,1,0])
+lucky_sevens([2,1,5,1,1,5,1,5])
